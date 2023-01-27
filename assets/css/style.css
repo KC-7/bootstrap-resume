@@ -3,7 +3,7 @@
 /* ---------------------------------------- Colours */
 
 .bg-color-name-title {
-    background-color: #676767;
+    background-color: #929598;
 }
 
 .ui-menu-color-home {
@@ -41,6 +41,8 @@ header {
     transition: all .5s ease-in-out;
     -moz-transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+
+    background-color: #65c9ff;
 }
 
 .name {
@@ -66,6 +68,10 @@ header {
 
 .menu-container {
     font-size: 0;
+}
+
+#nav {
+    margin: 0;
 }
 
 #nav li {
@@ -104,4 +110,8 @@ header {
     font-size: 14px;
 }
 
-/* ---------------------------------------- XXX */
+/* ---------------------------------------- Hover.css */
+
+.hvr-sweep-to-bottom:before {
+    background-color: rgba(0, 0, 0, 0.2);
+}
