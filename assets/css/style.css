@@ -38,6 +38,15 @@
     background-color: #525252;
 }
 
+.ui-menu-color-github {
+    background-color: #1c4a6c;
+}
+
+.ui-menu-color-interests {
+    background-color: #e74c3c;
+}
+
+
 /* ---------------------------------------- Special Padding / Margin / Text */
 
 h1,
@@ -364,9 +373,21 @@ button[type="submit"] {
     background-color: #e84610;
 }
 
+/*--------------------------------------------Map*/
+
+div#map {
+    min-height: 360px;
+}
+
 /* ---------------------------------------- Media Queries */
 
 @media(min-width: 992px) {
+    .section-column {
+        padding: 0 30px 30px;
+        float: none;
+        display: table-cell;
+    }
+
     .center-form {
         padding-top: 30px;
         min-height: 240px;
