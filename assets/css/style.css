@@ -373,10 +373,22 @@ button[type="submit"] {
     background-color: #e84610;
 }
 
-/*--------------------------------------------Map*/
+/*-------------------------------------------- Map */
 
 div#map {
     min-height: 360px;
+}
+/*-------------------------------------------- 404 */
+
+.errorPage {
+    font-family: "Exo", sans-serif;
+    text-align: center;
+    background-color: #f7943d;
+    color: #525252;
+}
+
+#errorImage {
+    width: 100vw;
 }
 
 /* ---------------------------------------- Media Queries */
