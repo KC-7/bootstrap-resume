@@ -17,7 +17,14 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-
+    <!-- emailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("uR26qXjv7WfaMBI2u");
+        })();
+    </script>
 </head>
 
 <body>
@@ -75,11 +82,11 @@
                 <h5 class="uppercase text-center">Let's work together!</h5>
 
                 <div class="center-form">
-                    <form>
+                    <form onsubmit="return sendMail(this);">
                         <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
                         <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email"
                             required />
-                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control"
+                        <textarea rows="5" name="projectsummary" id="messagetext" class="form-control"
                             placeholder="Project description" required></textarea>
                         <div class="form-row text-center">
                             <div class="col">
@@ -155,7 +162,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
